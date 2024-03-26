@@ -80,7 +80,6 @@ export const fetchMarkers = async (): Promise<MarkerData[]> => {
 export const addMarker = async (marker: MarkerData): Promise<MarkerData> => {
   const response = await fetch(`${API_BASE_URL}/api/markers/create`, {
     method: 'POST',
-    credentials: 'include', 
     headers: {
       'Content-Type': 'application/json',
     },
@@ -95,7 +94,7 @@ export const addMarker = async (marker: MarkerData): Promise<MarkerData> => {
 };
 
 export const deleteMarker = async (id: string): Promise<{ message: string }> => {
-  const response = await fetch(`${API_BASE_URL}/markers/delete/${id}`, {
+  const response = await fetch(`${API_BASE_URL}/api/markers/delete/${id}`, {
     method: 'DELETE',
   });
 
@@ -105,3 +104,19 @@ export const deleteMarker = async (id: string): Promise<{ message: string }> => 
 
   return response.json();
 };   
+
+export const updateMarker = async (id: string, updatedMarkerData: MarkerData): Promise<MarkerData> => {
+  const response = await fetch(`${API_BASE_URL}/api/markers/update/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(updatedMarkerData),
+  });
+
+  if (!response.ok) {
+    throw new Error('Something went wrong with the PUT request');
+  }
+
+  return response.json();
+};
