@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Marker, Popup, useMapEvents } from "react-leaflet";
-import L, { LatLng } from "leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { fetchMarkers, addMarker, deleteMarker, updateMarker } from "../../api-client";

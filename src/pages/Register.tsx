@@ -29,7 +29,7 @@ const Register = () => {
             navigate("/")
             },
         onError: (error: Error)=> {
-          showToast({message: "Registration Unsuccesful!", type: "ERROR"})   
+          showToast({message: error.message, type: "ERROR"})   
         }
     })
 
