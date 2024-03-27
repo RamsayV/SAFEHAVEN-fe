@@ -25,7 +25,7 @@ const SignOutButton = () => {
       onClick={handleClick}
       className="text-red-400 px-3 font-bold bg-white hover:bg-gray-100"
     >
-      Sign Out
+      Log Out
     </button>
   );
 };
