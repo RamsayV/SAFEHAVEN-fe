@@ -18,10 +18,16 @@ const Header = () => {
               <Link to="/memory-map" className="flex items-center  text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
                 Map
               </Link>
+              <Link to="/toilets" className="flex items-center  text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
+                Toilets
+              </Link>
               <SignOutButton />
               </>: <> <Link to="/sign-in" className="flex bg-white items-center text-black-200 px-3 font-bold hover:bg-gray-100">
                     Login
                 </Link>
+                <Link to="/toilets" className="flex items-center  text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
+                Toilets
+              </Link>
               </>
                 }
                
