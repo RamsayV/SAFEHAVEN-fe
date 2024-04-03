@@ -4,11 +4,8 @@ export default {
   theme: {
     extend: {},
     container: {
-      padding: {
-        md: "10rem",
-      },
+      // Your configuration
     },
   },
   plugins: [],
 };
-

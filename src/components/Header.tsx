@@ -12,7 +12,7 @@ const Header = () => {
             </span>
             <span className='flex space-x-2'>
               {isLoggedIn ? <>
-              <Link to="/map" className="flex items-center text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
+              <Link to="/nothing" className="flex items-center text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
                 Chats
               </Link>
               <Link to="/memory-map" className="flex items-center  text-red-400 px-3 font-bold bg-white hover:bg-gray-100">

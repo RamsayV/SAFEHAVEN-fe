@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout><Home/></Layout>} />
+        <Route path="/" element={<Home/>} />
         <Route path="*" element={<Navigate to="/" />} />
         <Route
           path="/register"
@@ -26,8 +26,8 @@ function App() {
           }
         />
         <Route path="/sign-in" element={<Layout><SignIn /></Layout>}/>
-        <Route path="/memory-map" element={<MemoryMap />}/>
         <Route path="/toilets" element={<Toilets />}/>
+        <Route path="/memory-map" element={<MemoryMap />}/>
       </Routes>
     </Router>
   );
