@@ -24,7 +24,7 @@ const LocationMarkers = () => {
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
   useMapEvents({
-    click: (e) => {
+    dblclick: (e) => {
       const newMarker: MarkerData = {
         tempId: `temp-${Date.now()}`,
         position: e.latlng,

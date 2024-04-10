@@ -10,7 +10,7 @@ const Header = () => {
             <span className='text-3xl text-white font-bold tracking-tight'>
               <Link to="/">SAFEHAVEN</Link>  
             </span>
-            <span className='flex space-x-2'>
+            {/* <span className='flex space-x-2'>
               {isLoggedIn ? <>
               <Link to="/nothing" className="flex items-center text-red-400 px-3 font-bold bg-white hover:bg-gray-100">
                 Chats
@@ -29,9 +29,9 @@ const Header = () => {
                 Toilets
               </Link>
               </>
-                }
-               
-            </span>
+                } */}
+{/*                
+            </span> */}
         </div>
 
     </div>

@@ -7,7 +7,7 @@ const Hero = () => {
     <p className="text-2xl font-bold p-2">Welcome to community</p>
     <h1 className="md:text-7xl sm:text- text-4xl font-bold md:py-6">SafeHaven</h1>
     <div className='flex justify-center items-center'>
-     <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>A safe, inclusive space for</p>
+     <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>For people who identify as</p>
       <ReactTyped 
       className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
       strings={[
